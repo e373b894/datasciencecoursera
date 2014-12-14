@@ -7,9 +7,10 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("Word Cloud"),
   
-  headerPanel(
-              h5("Select a document list from the dropdown.  Click change after your selection. Use the sliders to set the min word frequency and the max number of words."),
-              ),
+#  headerPanel(
+#              h4(":"),
+#              h5("Select a document list from the dropdown.  Click change after your selection. Use the sliders to set the min word frequency and the max number of words."),
+#              ),
   
   # Sidebar with a slider and selection inputs
   sidebarPanel(width = 5,
@@ -28,6 +29,8 @@ shinyUI(fluidPage(
   
   # Show Word Cloud
   mainPanel(
+    h4("Documentation:"),
+    h5("Select a document list from the dropdown.  Click change after your selection. Use the sliders to set the min word frequency and the max number of words."),
     plotOutput("plot")
     
   )
